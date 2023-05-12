@@ -1,0 +1,68 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Button styles */
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+  text-align: center;
+  height: 300px;
+}
+
+/* Hide quizContainer, gameOver, youWin, and highScoresPage by default */
+#quizContainer, #gameOver, #youWin, #highScoresPage {
+  display: none;
+}
+
+/* Position timer container on the top right corner */
+#timerContainer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Style high scores list */
+#highScoresList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style high scores link */
+#highScoresLink {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+/* Style answer buttons container */
+#answers div {
+  display: inline-block;
+  margin: 0 5px; /* Adjust this value to control the spacing between buttons */
+}
+
+/* Style Go Back button in the High Scores */
+#goBack {
+  margin-top: 20px;
+}
+

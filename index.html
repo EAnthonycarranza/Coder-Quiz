@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Introduction -->
+        <div id="intro">
+            <h1>Code Quiz</h1>
+            <p>Answer the following questions that are code related! But beware, you will be penalized if you miss any questions! Good luck coder!</p>
+            <button id="startButton">Start Quiz</button>
+        </div>
+
+        <!-- Quiz container -->
+        <div id="quizContainer">
+            <h2 id="question"></h2>
+            <div id="answers"></div>
+            <p id="resultMessage" style="display: none;"></p>
+        </div>
+
+        <!-- Game over screen -->
+        <div id="gameOver">
+            <h2>Game Over</h2>
+            <p>Your score: <span id="finalScoreGameOver"></span></p>
+            <label for="initialsGameOver">Enter your initials:</label>
+            <input type="text" id="initialsGameOver" maxlength="3" pattern="[A-Za-z]{3}" title="Enter exactly 3 letters">
+            <button id="saveScoreGameOver">Save</button>
+        </div>
+
+        <!-- You win screen -->
+        <div id="youWin">
+            <h2>You Win!</h2>
+            <p>Your score: <span id="finalScoreYouWin"></span></p>
+            <label for="initialsYouWin">Enter your initials:</label>
+            <input type="text" id="initialsYouWin" maxlength="3" pattern="[A-Za-z]{3}" title="Enter exactly 3 letters">
+            <button id="saveScoreYouWin">Save</button>
+        </div>
+
+        <!-- Timer container -->
+        <div id="timerContainer">
+            <span id="timer">Time: 60</span>
+        </div>
+
+        <!-- Top bar with high scores link -->
+        <div id="topBar">
+            <a href="#" id="highScoresLink">High Scores</a>
+        </div>
+
+        <!-- High scores page -->
+        <div id="highScoresPage" style="display: none;">
+            <h2>Scores</h2>
+            <ul id="highScoresList"></ul>
+            <button id="goBack">Go Back</button>
+        </div>
+
+        <!-- Clear high scores button -->
+        <button id="clearHighScores" style="display: none;">Clear High Scores</button>
+    </div>
+
+    <!-- JavaScript script -->
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
